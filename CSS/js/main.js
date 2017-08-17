@@ -2,7 +2,7 @@ var settings = {
 
 	banner: {
 
-		
+
 			indicators: true,
 
 
@@ -29,7 +29,6 @@ var settings = {
 	});
 
 	/**
-	 * Applies parallax scrolling to an element's background image.
 	 * @return {jQuery} jQuery object.
 	 */
 	$.fn._parallax = (skel.vars.browser == 'ie' || skel.vars.mobile) ? function() { return $(this) } : function(intensity) {
@@ -103,8 +102,7 @@ var settings = {
 
 	};
 
-	/**
-	 * Custom banner slider for Slate.
+
 	 * @return {jQuery} jQuery object.
 	 */
 	$.fn._slider = function(options) {
@@ -124,7 +122,7 @@ var settings = {
 
 		}
 
-		// Vars.
+
 			var	current = 0, pos = 0, lastPos = 0,
 				slides = [], indicators = [],
 				$indicators,
@@ -133,7 +131,7 @@ var settings = {
 				isLocked = false,
 				i = 0;
 
-		// Turn off indicators if we only have one slide.
+
 			if ($slides.length == 1)
 				options.indicators = false;
 
@@ -148,7 +146,7 @@ var settings = {
 				if (stop)
 					window.clearInterval(intervalId);
 
-				// Update positions.
+
 					lastPos = pos;
 					pos = x;
 
